@@ -1,0 +1,22 @@
+{
+    "name": "@cami/config",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "main": "index.js",
+    "exports": {
+        "./prettier": "./prettier/index.js",
+        "./eslint/base": "./eslint/base.js",
+        "./eslint/next": "./eslint/next.js"
+    },
+    "dependencies": {
+        "@eslint/eslintrc": "^3.2.0",
+        "@eslint/js": "^9.18.0",
+        "@typescript-eslint/eslint-plugin": "^8.46.0",
+        "@typescript-eslint/parser": "^8.46.0",
+        "eslint-config-next": "15.5.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-vitest": "^0.5.4",
+        "globals": "^16.4.0"
+    }
+}
