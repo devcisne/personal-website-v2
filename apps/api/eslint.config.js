@@ -1,4 +1,4 @@
-import baseConfig from '@cami/config/eslint/base';
+import baseConfig from '@personal-website/config/eslint/base';
 import vitest from 'eslint-plugin-vitest';
 import globals from 'globals';
 

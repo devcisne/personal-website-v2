@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { hello } from '@cami/utils';
 
 export default function Home() {
   return (

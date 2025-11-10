@@ -1,4 +1,4 @@
-import { MoneyUtils } from '@cami/utils';
+import { MoneyUtils } from '@personal-website/utils';
 
 /**
  * DTO for item data sent to the frontend

@@ -14,7 +14,7 @@
     "clean": "rm -rf .next"
   },
   "dependencies": {
-    "@cami/utils": "workspace:*",
+    "@personal-website/utils": "workspace:*",
     "@headlessui/react": "^2.2.9",
     "clsx": "^2.1.1",
     "next": "15.5.4",
@@ -22,7 +22,7 @@
     "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "@cami/config": "workspace:*",
+    "@personal-website/config": "workspace:*",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.9.1",

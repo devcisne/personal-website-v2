@@ -1,5 +1,5 @@
 {
-    "name": "@cami/types",
+    "name": "@personal-website/types",
     "version": "0.0.0",
     "private": true,
     "type": "module",
@@ -17,7 +17,7 @@
         "clean": "rm -rf dist"
     },
     "dependencies": {
-        "@cami/utils": "workspace:*"
+        "@personal-website/utils": "workspace:*"
     },
     "devDependencies": {
         "typescript": "^5.7.3"

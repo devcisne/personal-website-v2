@@ -26,8 +26,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@cami/types": "workspace:*",
-    "@cami/utils": "workspace:*",
+    "@personal-website/types": "workspace:*",
+    "@personal-website/utils": "workspace:*",
     "@nestjs/common": "^11.0.1",
     "@nestjs/config": "^4.0.0",
     "@nestjs/core": "^11.0.1",
@@ -41,7 +41,7 @@
     "uuid": "^10.0.0"
   },
   "devDependencies": {
-    "@cami/config": "workspace:*",
+    "@personal-website/config": "workspace:*",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.18.0",
     "@nestjs/cli": "^11.0.0",

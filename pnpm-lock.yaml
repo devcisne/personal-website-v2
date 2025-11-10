@@ -20,12 +20,6 @@ importers:
 
   apps/api:
     dependencies:
-      '@cami/types':
-        specifier: workspace:*
-        version: link:../../packages/types
-      '@cami/utils':
-        specifier: workspace:*
-        version: link:../../packages/utils
       '@nestjs/common':
         specifier: ^11.0.1
         version: 11.1.6(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -41,6 +35,12 @@ importers:
       '@nestjs/typeorm':
         specifier: ^11.0.0
         version: 11.0.0(@nestjs/common@11.1.6(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.6)(reflect-metadata@0.2.2)(rxjs@7.8.2)(typeorm@0.3.27(reflect-metadata@0.2.2)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@22.18.8)(typescript@5.9.3)))
+      '@personal-website/types':
+        specifier: workspace:*
+        version: link:../../packages/types
+      '@personal-website/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       dotenv:
         specifier: ^17.2.3
         version: 17.2.3
@@ -60,9 +60,6 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0
     devDependencies:
-      '@cami/config':
-        specifier: workspace:*
-        version: link:../../packages/config
       '@eslint/eslintrc':
         specifier: ^3.2.0
         version: 3.3.1
@@ -78,6 +75,9 @@ importers:
       '@nestjs/testing':
         specifier: ^11.0.1
         version: 11.1.6(@nestjs/common@11.1.6(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.6)(@nestjs/platform-express@11.1.6)
+      '@personal-website/config':
+        specifier: workspace:*
+        version: link:../../packages/config
       '@types/express':
         specifier: ^5.0.0
         version: 5.0.3
@@ -138,12 +138,12 @@ importers:
 
   apps/web:
     dependencies:
-      '@cami/utils':
-        specifier: workspace:*
-        version: link:../../packages/utils
       '@headlessui/react':
         specifier: ^2.2.9
         version: 2.2.9(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@personal-website/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -157,12 +157,12 @@ importers:
         specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
     devDependencies:
-      '@cami/config':
-        specifier: workspace:*
-        version: link:../../packages/config
       '@eslint/eslintrc':
         specifier: ^3
         version: 3.3.1
+      '@personal-website/config':
+        specifier: workspace:*
+        version: link:../../packages/config
       '@tailwindcss/postcss':
         specifier: ^4
         version: 4.1.14
@@ -241,7 +241,7 @@ importers:
 
   packages/types:
     dependencies:
-      '@cami/utils':
+      '@personal-website/utils':
         specifier: workspace:*
         version: link:../utils
     devDependencies:

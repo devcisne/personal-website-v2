@@ -1,3 +1,3 @@
-import nextConfig from '@cami/config/eslint/next';
+import nextConfig from '@personal-website/config/eslint/next';
 
 export default nextConfig;
