@@ -11,7 +11,8 @@ import Toggle from '@/components/toggle'
 const NAVIGATION_ITEMS = [
   { name: 'Home', route: '/' },
   { name: 'Projects', route: '/projects' },
-  { name: 'About', route: '/about' },
+  { name: 'About me', route: '/about' },
+  { name: 'Gallery', route: '/gallery' },
   { name: 'Contact', route: '/contact' },
 ]
 
