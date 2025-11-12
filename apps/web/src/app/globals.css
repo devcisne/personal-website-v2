@@ -192,4 +192,13 @@ body {
   .react-bubbly-transitions__bubbly-link {
     @apply text-lg md:text-xl lg:text-2xl;
   }
+
+  /* Hide scrollbars for custom scroll areas */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
 }
