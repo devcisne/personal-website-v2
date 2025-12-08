@@ -11,7 +11,13 @@
         "lint": "turbo run lint",
         "format": "turbo run format",
         "test": "turbo run test",
-        "clean": "turbo run clean --no-cache"
+        "clean": "turbo run clean --no-cache",
+        "docker:build": "docker compose build",
+        "docker:up": "docker compose up -d",
+        "docker:down": "docker compose down",
+        "docker:logs": "docker compose logs -f",
+        "docker:restart": "docker compose restart",
+        "docker:clean": "docker compose down -v"
     },
     "devDependencies": {
         "prettier": "^3.4.2",
