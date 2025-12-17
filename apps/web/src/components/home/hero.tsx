@@ -1,3 +1,5 @@
+import { TagCloud } from './tagCloud'
+
 export function Hero() {
   return (
     <div className="min-h-[70vh] bg-white dark:bg-black font-['Ubuntu']">
@@ -32,9 +34,8 @@ export function Hero() {
           </div>
         </div>
         <div className="my-auto flex-auto w-full sm:w-2/6">
-          {/* TagCloud placeholder - you'll implement this */}
           <div className="text-center text-muted-foreground">
-            TagCloud Component Here
+            <TagCloud />
           </div>
         </div>
       </div>
