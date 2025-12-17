@@ -20,14 +20,23 @@ FROM node:22-alpine AS runner
 
 WORKDIR /app
 
-# Copy necessary files
-COPY --from=builder /app/node_modules ./node_modules
+# Enable pnpm
+RUN corepack enable pnpm
+
+# Copy package files
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml turbo.json tsconfig.base.json ./
+COPY packages ./packages
+COPY apps/api/package.json ./apps/api/
+
+# Install production dependencies only
+RUN pnpm install --frozen-lockfile --prod
+
+# Copy built application
 COPY --from=builder /app/apps/api/dist ./apps/api/dist
-COPY --from=builder /app/packages ./packages
 
 # Create data directory
 RUN mkdir -p /app/data
 
 EXPOSE 4000
 
-CMD ["node", "apps/api/dist/main.js"]
+CMD ["node", "apps/api/dist/src/main.js"]
