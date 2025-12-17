@@ -3,11 +3,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.web
+    env_file:
+      - apps/web/.env
     ports:
       - "3000:3000"
     environment:
       - NEXT_PUBLIC_API_ENDPOINT=http://api:4000
-      - NEXT_PUBLIC_RECAPTCHA_SITE_KEY=${NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
     depends_on:
       - api
 

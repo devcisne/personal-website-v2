@@ -100,7 +100,7 @@ pnpm run docker:up
 
 4. **Access the applications**
 - Frontend: http://localhost:3000
-- Backend API: http://localhost:3001
+- Backend API: http://localhost:4000
 
 #### 💻 Local Development (Without Docker)
 
@@ -161,7 +161,7 @@ Both frontend and backend will start with hot-reload enabled:
          │
          ▼
 ┌─────────────────┐
-│   Backend API   │  Port 3001
+│   Backend API   │  Port 4000
 │   (NestJS)      │  RESTful API
 └────────┬────────┘
          │
@@ -182,7 +182,7 @@ Both frontend and backend will start with hot-reload enabled:
 
 **API Service (Backend)**
 - Base Image: Node.js 22 Alpine (~250MB)
-- Port: 3001
+- Port: 4000
 - Features: NestJS server with TypeORM
 - Database: SQLite with persistent Docker volume
 
